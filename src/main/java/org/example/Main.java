@@ -30,18 +30,16 @@ public class Main {
             }
 
             for(j=0; j<2.0; j++){
-                for(i=0; i<TAM; i++){
-                    System.out.println("Digite as notas dos dois bimestres do aluno "+ nomes[i]);
-                    System.out.println("Primeiro bimestre:");
-                    bUm = digitar.nextInt();
-                    System.out.println("Segundo bimestre:");
-                    bDois = digitar.nextInt();
-                    soma = (bUm+bDois)/2.00;
-                    notas[j] = soma;
 
-                    System.out.printf("A media = %.2f%n",notas[j]);
+                System.out.println("Digite as notas dos dois bimestres do aluno "+ nomes[j]);
+                System.out.println("Primeiro bimestre:");
+                bUm = digitar.nextInt();
+                System.out.println("Segundo bimestre:");
+                bDois = digitar.nextInt();
+                soma = (bUm+bDois)/2.00;
+                notas[j] = soma;
+                System.out.printf("A media = %.2f%n",notas[j]);
 
-                }
             }
         }
         digitar.close();
